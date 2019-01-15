@@ -1,0 +1,4 @@
+author = Ashe
+version = 0.1
+displayName = Test Mod
+buildignore = *.sln, *.csproj, *.user, obj\*, bin\*, .vs\*

@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace TestMod.NPC
 {
+	[AutoloadHead]
 	public class TestBoi : ModNPC
 	{
 		public override bool Autoload(ref string name)
@@ -35,9 +36,16 @@ namespace TestMod.NPC
 			NPCID.Sets.HatOffsetY[npc.type] = 4;
 			animationType = NPCID.Guide;
 		}
-		public static bool TownSpawn() 
+		//Spawning conditions
+		public override bool CanTownNPCSpawn(int numTownNPCs, int money)
 		{
+			//if(NPC.downedBoss1) for example for if EoC is dead
 			return true;
+		}
+		//Other housing conditions
+		public override bool CheckConditions(int left, int right, int top, int bottom)
+		{
+			return true; //when a house is available he will take it
 		}
 		public override string TownNPCName()
 		{

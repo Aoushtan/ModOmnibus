@@ -4,7 +4,7 @@ using Terraria.ID;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace TestMod.NPC
+namespace TestMod.NPCs
 {
 	[AutoloadHead]
 	public class TestBoi : ModNPC

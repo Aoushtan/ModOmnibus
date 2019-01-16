@@ -1,32 +1,33 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TestMod.Items
+namespace TestMod.Items.Weapons
 {
 	//For armor to auto equip
 	//[AutoloadEquip(EquipType.Head)]
-	public class Excalibad : ModItem
+	public class Soulless : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Excalibad");
-			Tooltip.SetDefault("An awful pun but decent sword.");
+			DisplayName.SetDefault("Soulless");
+			Tooltip.SetDefault("The sword of a being who lost his soul.");
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 50; //damage int
-			item.crit = 2; //Critical multiplyer
+			item.damage = 500; //damage int
+			item.crit = 25; //Critical multiplyer
 			item.melee = true; //Used for swords and such
 			item.width = 40; //hitbox width
 			item.height = 40; //hitbox height
-			item.useTime = 20; //Frames to use item
-			item.useAnimation = 20; //Frames for the animation
+			item.useTime = 10; //Frames to use item
+			item.useAnimation = 10; //Frames for the animation
 			item.useStyle = 1; //Type of use (1 swing, drink 2, etc. find on wiki)
-			item.knockBack = 6; //Float value for knockback (max 20)
-			item.value = 10000; //Purchase price (value)
-			item.rare = 12; //Rarity
+			item.knockBack = 20; //Float value for knockback (max 20)
+			item.value = 100000; //Purchase price (value)
+			item.rare = 13; //Rarity
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true; //Continuous use of item
+			
 			//item.maxStack = 1 (sets the items max stack amount)
 			//item.useTurn = true (allows you to turn while using)
 			//item.mana = 20 Mana use for magic items

@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace TestMod.Items
+namespace TestMod.Items.Blocks
 {
 	public class TileItem : ModItem
 	{

@@ -55,8 +55,8 @@ namespace TestMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(mod.ItemType("NewBar"));
+			recipe.AddTile(mod.TileType("ModBench"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

@@ -35,14 +35,14 @@ namespace TestMod.Items.Weapons
 			}
 		}
 		
-		/*public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.MusketBall, 50);
 			recipe.AddIngredient(mod.ItemType("NewBar"));
-			recipe.AddTile(mod.TileType("ModBench");
+			recipe.AddTile(mod.TileType("ModBench"));
 			recipe.SetResult(this, 50);
 			recipe.AddRecipe();
-		}*/
+		}
 	}
 }

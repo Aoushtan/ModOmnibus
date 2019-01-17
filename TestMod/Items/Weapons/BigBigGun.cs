@@ -33,14 +33,14 @@ namespace TestMod.Items.Weapons
 			item.useAmmo = AmmoID.Bullet;
 		}
 		
-		/*public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.ItemType("NewBar"), 10);
 			recipe.AddTile(mod.TileType("ModBench"));
-			recipe.setResult(this);
+			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}*/
+		}
 		public override bool ConsumeAmmo(Player player)
 		{
 			return Main.rand.NextFloat() >= .25f;
